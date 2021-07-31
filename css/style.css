@@ -1,0 +1,54 @@
+body{
+    display: flex;
+}
+#main-doc{
+    padding-left: 20px;
+    background: cadetblue;
+}
+@media screen and (min-width:700px) {
+    body{
+        display: grid;
+        grid-template-columns: 300px auto;
+        margin:0;
+                
+    }
+    #navbar{
+        grid-column: 1;
+        display: flex;
+        position:fixed;
+        flex-direction: column;
+        border-right: 1px solid brown;
+        padding: 10px;
+        height: 100vh;
+        background: #0074D9;
+        color: whitesmoke;
+        margin:auto;
+    }
+    #navbar a {
+        padding:20px;
+        border-top: 1px solid whitesmoke;
+        text-decoration: none;
+        color:whitesmoke;
+    }
+    #navbar header{
+        font-size: 180%;
+        padding: 30px;
+        font-weight: 800;
+    }
+    #main-doc header{
+        font-size: 140%;
+        font-weight: 700;
+        margin:20px;
+    }
+    #main-doc div{
+        background-color: white;
+        padding: 10px;
+        margin:20px;
+    }
+    
+}
+hr{
+    height: 1px;
+        background-color: #ccc;
+        border: none;
+}
